@@ -12,7 +12,7 @@
     <rdfs:isDefinedBy rdf:resource="http://pcdm.org/file-format-types#"/>
     <skos:exactMatch rdf:resource="http://vocab.getty.edu/aat/300026031" />
     <skos:exactMatch rdf:resource="http://www.semanticdesktop.org/ontologies/2007/03/22/nfo#Document" />
-    <skos:exactMatch rdf:resource="http://www.udfr.org/onto#DocumentGenre" />
+    <skos:narrowMatch rdf:resource="http://www.udfr.org/onto#DocumentGenre" />
   </udfrs:GenreFacetType>
   <udfrs:GenreFacetType rdf:ID="Archive">
     <rdfs:isDefinedBy rdf:resource="http://pcdm.org/file-format-types#"/>
@@ -147,6 +147,13 @@
     <skos:exactMatch rdf:resource="http://www.semanticdesktop.org/ontologies/2007/03/22/nfo#Spreadsheet" />
     <skos:exactMatch rdf:resource="http://reference.data.gov.uk/technical-registry/Spreadsheet" />
     <skos:exactMatch rdf:resource="http://www.udfr.org/onto#SpreadsheetGenre" />
+  </udfrs:GenreFacetType>
+  <udfrs:GenreFacetType rdf:ID="WordProcessingDocument">
+    <rdfs:isDefinedBy rdf:resource="http://pcdm.org/file-format-types#"/>
+    <rdfs:subClassOf rdf:resource="Document" />
+    <skos:closeMatch rdf:resource="http://www.semanticdesktop.org/ontologies/2007/03/22/nfo#PaginatedTextDocument" />
+    <skos:exactMatch rdf:resource="http://reference.data.gov.uk/technical-registry/WordprocessedText" />
+    <skos:exactMatch rdf:resource="http://www.udfr.org/onto#DocumentGenre" />
   </udfrs:GenreFacetType>
   <!-- All media genres -->
   <udfrs:GenreFacetType rdf:ID="MediaList">
