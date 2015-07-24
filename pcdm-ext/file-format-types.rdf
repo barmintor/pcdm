@@ -134,23 +134,29 @@
     <skos:exactMatch rdf:resource="http://www.semanticdesktop.org/ontologies/2007/03/22/nfo#HTMLDocument" />
     <skos:exactMatch rdf:resource="http://vocab.getty.edu/aat/300266021" />
   </udfrs:GenreFacetType>
-  <udfrs:GenreFacetType rdf:ID="Presentation">
+  <!-- All office/productivity types -->
+  <udfrs:GenreFacetType rdf:ID="OfficeDocument">
     <rdfs:isDefinedBy rdf:resource="http://pcdm.org/file-format-types#"/>
     <rdfs:subClassOf rdf:resource="Document" />
+    <rdfs:subClassOf rdf:resource="Text" />
+  </udfrs:GenreFacetType>
+  <udfrs:GenreFacetType rdf:ID="Presentation">
+    <rdfs:isDefinedBy rdf:resource="http://pcdm.org/file-format-types#"/>
+    <rdfs:subClassOf rdf:resource="OfficeDocument" />
     <skos:exactMatch rdf:resource="http://www.semanticdesktop.org/ontologies/2007/03/22/nfo#Presentation" />
     <skos:exactMatch rdf:resource="http://reference.data.gov.uk/technical-registry/Presentation" />
     <skos:exactMatch rdf:resource="http://www.udfr.org/onto#PresentationGenre" />
   </udfrs:GenreFacetType>
   <udfrs:GenreFacetType rdf:ID="Spreadsheet">
     <rdfs:isDefinedBy rdf:resource="http://pcdm.org/file-format-types#"/>
-    <rdfs:subClassOf rdf:resource="Document" />
+    <rdfs:subClassOf rdf:resource="OfficeDocument" />
     <skos:exactMatch rdf:resource="http://www.semanticdesktop.org/ontologies/2007/03/22/nfo#Spreadsheet" />
     <skos:exactMatch rdf:resource="http://reference.data.gov.uk/technical-registry/Spreadsheet" />
     <skos:exactMatch rdf:resource="http://www.udfr.org/onto#SpreadsheetGenre" />
   </udfrs:GenreFacetType>
   <udfrs:GenreFacetType rdf:ID="WordProcessingDocument">
     <rdfs:isDefinedBy rdf:resource="http://pcdm.org/file-format-types#"/>
-    <rdfs:subClassOf rdf:resource="Document" />
+    <rdfs:subClassOf rdf:resource="OfficeDocument" />
     <skos:closeMatch rdf:resource="http://www.semanticdesktop.org/ontologies/2007/03/22/nfo#PaginatedTextDocument" />
     <skos:exactMatch rdf:resource="http://reference.data.gov.uk/technical-registry/WordprocessedText" />
     <skos:exactMatch rdf:resource="http://www.udfr.org/onto#DocumentGenre" />
